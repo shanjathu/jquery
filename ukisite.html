@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      $("#flip").click(function(){
+          $("#panel").slideDown("slow");
+      });
+  });
+  </script>
+  <script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#para").hide(1000);
+    });
+});
+</script>
+
+  <script>
+$(document).ready(function(){
+    $("#p1").mouseenter(function(){
+        alert("Hey Uki ");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("ul").hide();
+    });
+    $("#show").click(function(){
+        $("ul").show();
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("h2").on({
+        mouseenter: function(){
+            $(this).css("background-color", "lightgray");
+        },
+        mouseleave: function(){
+            $(this).css("background-color", "lightblue");
+        },
+        click: function(){
+            $(this).css("background-color", "yellow");
+        }
+    });
+});
+</script>
+    <meta charset="utf-8">
+    <title>Html div tag</title>
+    <style media="screen">
+      .p1 { background-color: powderblue;
+          border-radius: 25px;
+         width: 40%;
+      height: 30%;
+      padding: 20px;
+     }
+     .p2 { float: left;
+     width: 30;
+   height: 20%;
+   background-color: grey;
+ border-radius: 20px;
+ padding: 20px;
+ float: left;
+}
+.p3 {width: 30;
+height: 20%;
+background-color: grey;
+border-radius: 20px;
+padding: 20px;
+float: right;}
+footer {background-color: powderblue;
+text-align: center;
+width: 100%;
+padding: 10px}
+
+
+
+
+
+#panel, #flip {
+   padding: 5px;
+   text-align: center;
+   background-color: powderblue;
+   border: solid 1px powderblue;
+}
+
+#panel {
+   padding: 50px;
+   display: none;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div align="center">
+    <a href="#">Home</a>
+    <a href="form.html">Form</a>
+    <a href="timetable.html">Timetable</a>
+  </div>
+  <img  width="100%" src="uki.png" alt="uki picture"> <br><br><br>
+  <center> <div>
+    <div id="flip">Welcome Uki</div>
+  <div id="panel">Hey Uki...!</div>
+  <br>
+<div class="p1" style="text-align:center;">
+  <h2>Welcome to Uki : Stepping stone to <br>tech life</h2>
+    <p id="p1">It is a full scholarship based Accelerator program for Coding in Jaffna, Sri <br>Lanka targeting students who has completed Advanced Level examinations and <br>don’t have access to university education or any other form of vocational <br>education. It is aimed to provide the necessary training to enter Computer <br>Software industry or to start an IT startup.
+This is a joint initiative by Yarl IT <br>Hub and SERVE Foundation. Yarl IT Hub has been functioning for the last five <br>years as a not for profit social enterprise focusing on technology <br>entrepreneurship in northern Sri Lanka and SERVE Foundation is a four year <br>old foundation focusing on using technology to uplift secondary education <br>standards in rural schools in northern Sri Lanka.</p>
+
+</div>
+</center>
+<div class="p2">
+  <h2>Course</h2>
+  <p>Our vision is to be a leading center of excellence in teaching,<br>learning, research and schlorship.</p>
+
+<ul>
+    <li>Programming</li>
+    <li>Basic Business Skills.</li>
+    <li>Spoken English and Communication Skills.</li>
+    <li>Personal Coaching</li>
+  </ul>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</div class="p3"style="text-align=left;">
+<div float="right" class="p3">
+  <h2>CODING ACCELERATOR PROGRAM</h2>
+  <p id="para">This Coding Accelerator program is an intensive training on <br>full-stack development with server-side Node.js and modern, <br>client-side, front-end libraries and frameworks.Throughout <br>this intensive course the student will study professional <br>software development techniques and practices as he/she <br>advances his/her skills on JavaScript.</p>
+<button>Hide</button>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <footer>2017 @ Uki All Rights Reserved. A joint inittative  by Yarl IT Hub and SERVE Foundation</footer>
+  </body>
+</html>
